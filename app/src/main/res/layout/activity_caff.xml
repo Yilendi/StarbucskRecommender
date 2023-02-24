@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Caff">
+    <RadioGroup
+        android:id="@+id/rg_caff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toStartOf="@+id/rg_pro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_caff_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkNumButton" />
+
+        <RadioButton
+            android:id="@+id/rb_caff_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButton" />
+
+        <RadioButton
+            android:id="@+id/rb_caff_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButton" />
+
+
+        <RadioButton
+            android:id="@+id/rb_caff_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButtonAll"
+            android:text="@string/whatever" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_pro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rg_caff"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_pro_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkNumButtonSecond" />
+
+        <RadioButton
+            android:id="@+id/rb_pro_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButtonSecond" />
+
+        <RadioButton
+            android:id="@+id/rb_pro_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButtonSecond" />
+
+        <RadioButton
+            android:id="@+id/rb_pro_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButtonAll"
+            android:text="@string/whatever" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_caff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/caffiene"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_caff_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_caff" />
+
+    <Button
+        android:id="@+id/btn_caff_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_caff_apply" />
+
+    <Button
+        android:id="@+id/btn_caff_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/startover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_caff_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

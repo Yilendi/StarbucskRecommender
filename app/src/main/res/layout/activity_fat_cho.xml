@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fat_Cho">
+    <RadioGroup
+        android:id="@+id/rg_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toStartOf="@+id/rg_cho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_fat_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkNumButton" />
+
+        <RadioButton
+            android:id="@+id/rb_fat_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButton" />
+
+        <RadioButton
+            android:id="@+id/rb_fat_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButton" />
+
+
+        <RadioButton
+            android:id="@+id/rb_fat_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButtonAll"
+            android:text="@string/whatever" />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_cho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rg_fat"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_cho_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkNumButtonSecond" />
+
+        <RadioButton
+            android:id="@+id/rb_cho_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButtonSecond" />
+
+        <RadioButton
+            android:id="@+id/rb_cho_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButtonSecond" />
+
+        <RadioButton
+            android:id="@+id/rb_cho_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkNumButtonAll"
+            android:text="@string/whatever" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/fat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_fat_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_fat" />
+
+    <Button
+        android:id="@+id/btn_fat_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fat_next" />
+
+    <Button
+        android:id="@+id/btn_fat_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_fat_apply" />
+</androidx.constraintlayout.widget.ConstraintLayout>

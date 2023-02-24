@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Milk">
+
+    <RadioGroup
+        android:id="@+id/rg_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toStartOf="@+id/rg_whip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_milk_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="Nonfat" />
+
+        <RadioButton
+            android:id="@+id/rb_milk_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="2%" />
+
+        <RadioButton
+            android:id="@+id/rb_milk_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Whole" />
+
+
+        <RadioButton
+            android:id="@+id/rb_milk_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Soy" />
+
+        <RadioButton
+            android:id="@+id/rb_milk_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Coconut" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg_whip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rg_milk"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb_whip_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:onClick="checkButton"
+            android:text="No Whip" />
+
+        <RadioButton
+            android:id="@+id/rb_whip_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="checkButton"
+            android:text="Whip" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tv_milk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/milk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_milk_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg_milk" />
+
+    <Button
+        android:id="@+id/btn_milk_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/view_all"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_milk_next" />
+
+    <Button
+        android:id="@+id/btn_milk_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_milk_apply" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

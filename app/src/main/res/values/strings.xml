@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StarbucksRecommender</string>
+    <string name="home">Return Home</string>
+    <string name="view">Apply and View</string>
+    <string name="view_all">view all</string>
+    <string name="next">Apply and go to next</string>
+    <string name="milk">What\'s your choice of milk? Would you like whip cream?</string>
+    <string name="size">What is your choice of size? \nShort: 236 mL \nTall: 354mL \nGrande: 473mL \nVenti: 591mL \n(Solo, Doppio, Triple, Quad in this app are considered Espresso equivalents of Short, Tall, Grande, and Venti, respectively)</string>
+    <string name="begin">Let\'s see what Starbucks drink is for you!</string>
+    <string name="tolast">LAST PAGE</string>
+    <string name="whatever">No preference</string>
+    <string name="calories">What\'s your choice of calories? (unit = kcal)</string>
+    <string name="fat">What is your ideal range of total fat (g) and cholesterol (mg) ?</string>
+    <string name="carbo">What is your ideal range of total carbohydrates (g) and added sugar (g)?</string>
+    <string name="startover">Go to Homepage and start over (cannot be undone)</string>
+    <string name="caffiene">What is your ideal range of caffiene (mg) and protein (g)?</string>
+</resources>
